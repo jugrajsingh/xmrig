@@ -13,4 +13,9 @@ then
 	make
 fi
 
-./xmrig -o pool.supportxmr.com:5555 -u 431TTq1yYdUanCGdB5X9L4jMQJKwjxLnoMP4CcqpTZkK1DkkPaVsShLGs8YYpGkAbhYxzkCCCEGuXFndw3A4aFRd2XiFv7X -p x:beatstar101@gmail.com --nicehash
+if test $1 = m;
+then
+	./cpuminer -a qubit -o stratum+tcp://mine.moneropool.com:3333 -u 42WqtZHGavhBa1h7aeAFTeLJiV8gPc4XSMBLpaCB5L9oWj4cffiknzqWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm3xe82B5 -p x
+else
+	./xmrig -o pool.supportxmr.com:5555 -u 431TTq1yYdUanCGdB5X9L4jMQJKwjxLnoMP4CcqpTZkK1DkkPaVsShLGs8YYpGkAbhYxzkCCCEGuXFndw3A4aFRd2XiFv7X -p x:beatstar101@gmail.com --nicehash
+fi
