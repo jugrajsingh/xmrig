@@ -1,4 +1,4 @@
-sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev
+sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev screen
 
 if ! [ -e "build" ];
 then
